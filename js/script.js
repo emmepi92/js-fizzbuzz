@@ -1,11 +1,13 @@
+var outputHtml = document.getElementById("result");    
+     
 for ( x = 1; x <= 100; x ++ ) {       
     if ( x % 3 === 0 && x % 5 === 0) {          
-        document.getElementById("result").innerHTML += "FizzBuzz <br/>";        
+        outputHtml.innerHTML += "FizzBuzz <br/>";        
     } else if ( x % 3 === 0) {      
-        document.getElementById("result").innerHTML += "Fizz <br/>";        
+        outputHtml.innerHTML += "Fizz <br/>";        
     } else if ( x % 5 === 0) {      
-        document.getElementById("result").innerHTML += "Buzz <br/>";        
+        outputHtml.innerHTML += "Buzz <br/>";        
     } else {        
-        document.getElementById("result").innerHTML += x + " <br/>";        
+        outputHtml.innerHTML += x + " <br/>";        
     }       
 }       
